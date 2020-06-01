@@ -25,7 +25,8 @@ estructura tu camara nueva o vieja en base a la empresa a la que pertenece , la 
 
 ![image](https://user-images.githubusercontent.com/44983658/83378860-1297e880-a3a8-11ea-9a72-dfe88e0fa99c.png)
 
-![image](https://user-images.githubusercontent.com/44983658/83378958-5ab70b00-a3a8-11ea-93f9-7fab81d33015.png)
+![image](https://user-images.githubusercontent.com/44983658/83379250-137d4a00-a3a9-11ea-9271-fa6129281bc1.png)
+
 
 Toma una foto con una camara nueva!
 
