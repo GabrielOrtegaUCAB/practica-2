@@ -6,6 +6,8 @@ Practica 2 Desarrollo de software
 Angel Sucasas y
 Gabriel Ortega
 
+## Patron aplicado: Builder
+
 ## diagrama de clases
 
 ![Untitled Diagram-Page-1](https://user-images.githubusercontent.com/44983658/83378752-ad43f780-a3a7-11ea-8bc6-9d736f497c94.png)
