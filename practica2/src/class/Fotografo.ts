@@ -1,4 +1,5 @@
 import {CamaraModerna} from "./CamaraModerna";
+import {Camara} from "./Camara";
 
 export class Fotografo {
     nombre: string;
@@ -23,5 +24,4 @@ export class Fotografo {
             camara: this.camara
         };
     }
-
 }

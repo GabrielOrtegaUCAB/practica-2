@@ -1,6 +1,9 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get ,Param } from '@nestjs/common';
 import { AppService } from './app.service';
 import {Fotografo} from "./class/Fotografo";
+import {CamaraAntigua} from "./class/CamaraAntigua"
+import {CamaraModerna} from "./class/CamaraModerna"
+
 
 @Controller()
 export class AppController {
@@ -15,6 +18,22 @@ export class AppController {
   tomarFoto() {
     const fotografo = new Fotografo("Gabriel",10);
     return fotografo.TomarFotoConCamara();
+  }
+
+  @Get('BuilderCamaraVieja/:fabrica')
+  builderCamaraVieja(
+    @Param() fabrica: string,
+  ){
+    const camaraAntigua = new CamaraAntigua("ejemplo", 10,"ejempo3");
+    return camaraAntigua.asignarEstructura(fabrica, camaraAntigua);
+  }
+
+  @Get('BuilderCamaraNueva/:fabrica')
+  builderCamaraNuevo(
+     @Param() fabrica: string,
+   ){
+    const camaraNueva = new CamaraModerna("alto rango",30,"tridimensionales");
+    return camaraNueva.asignarEstructura(fabrica, camaraNueva);
   }
 
 }

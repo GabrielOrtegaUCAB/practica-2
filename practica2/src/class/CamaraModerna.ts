@@ -1,4 +1,7 @@
 import {CamaraAntigua} from "./CamaraAntigua";
+import {BuilderCamaraActual} from "./BuilderCamaraActual"
+import {CamaraDirector} from "./CamaraDirector"
+import {Fabricante} from "./Fabricante"
 
 export class CamaraModerna extends CamaraAntigua{
     saturacion: string;
@@ -32,6 +35,15 @@ export class CamaraModerna extends CamaraAntigua{
     public configurarContraste(nuevoContraste = "30%") {
         console.log("Se configura contraste de camara a : "+nuevoContraste);
         this.contraste = nuevoContraste;
+    }
+
+    public asignarEstructura(nombreFabricante: string , camaraModerna: CamaraModerna){
+        let fabricante= new Fabricante(camaraModerna);
+        fabricante.asignarNombreFabrica(nombreFabricante); 
+        var estructuraModerna= new BuilderCamaraActual();
+        let director = new CamaraDirector(estructuraModerna);      
+        this.estructura = director.asignarEstructura(fabricante.conseguirNombre());
+        return this.estructura;
     }
 
 }
