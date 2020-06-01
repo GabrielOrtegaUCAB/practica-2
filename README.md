@@ -3,7 +3,7 @@ Practica 2 Desarrollo de software
 
 ## integrantes:
 
-Angel Sucasas
+Angel Sucasas y
 Gabriel Ortega
 
 ## diagrama de clases
@@ -16,13 +16,13 @@ Gabriel Ortega
 
 ## instalacion 
 
-´´´
+ ```bash
 $npm install 
-´´´
+ ```
 
-´´´
+ ```bash
 $npm run start:dev
-´´´
+ ```
 
 luego, puedes hacer una peticion a los siguientes url!
 
